@@ -1,6 +1,7 @@
 <!doctype HTML>
     <html ng-app="personalPage">
         <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
             <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
             <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -33,6 +34,9 @@
                     <img src="rains2.jpg" />
                 </div>
                 <div id="face"></div>
+                <img id="ghub_contri" src="http://ghchart.rshah.org/mbad0la"/>
+                <div id="my-name"><span>Mayank</span><span>Badola</span></div>
+                
             </div>
             
             <div id="section-2">
@@ -43,6 +47,14 @@
             <script>
                 $(function(){
                     $("#section-1").css('height',window.innerHeight);
+                    
+                    $(document).scroll(function(){
+                        var scrolled = $(this).scrollTop();
+                        if(scrolled<window.innerHeight){
+                        
+                        }
+                        
+                    });
                     
                     window.onresize = function(){
                         $("#section-1").css('height',window.innerHeight);
